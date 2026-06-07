@@ -21,16 +21,14 @@
     
     color: #515076;
     display: flex;
-    
-    flex-direction: column;
+     flex-direction: column;
     box-sizing: border-box;
     width: 100%;
 }
 .page-title {
     display: flex;
     flex-wrap: wrap;
-    
-    justify-content: center;
+     justify-content: center;
     color: #515076;
     font-size: 70px;
     line-height: 78px;
@@ -38,7 +36,6 @@
 .product-card__price-value {
     display: block;
     text-align: right;
-   
     white-space: nowrap;
     margin-top: -20px;
 }
