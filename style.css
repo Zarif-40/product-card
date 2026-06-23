@@ -1,5 +1,15 @@
 
+.page-background {
+    position: absolute;
+    top: -350px;
+    left: 10px;
+    width: 790px;
+    height: 697px;
+    z-index: -1;
+    object-fit: cover;
+    }
 .products-grid { 
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -8,30 +18,31 @@
     min-height: 1191px; 
     margin: 40px auto;
     box-sizing: border-box;
-  
-
-}
+    font-family: Montserrat;
+    font-weight: 400;
+  }
 .product-card {
     background-color: #f9f7f7;
     padding: 24px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    
     max-width: 340px;
     min-height: 573px;
-    
     color: #515076;
     display: flex;
-     flex-direction: column;
+    flex-direction: column;
     box-sizing: border-box;
     width: 100%;
 }
 .page-title {
     display: flex;
     flex-wrap: wrap;
-     justify-content: center;
+    justify-content: center;
     color: #515076;
     font-size: 70px;
     line-height: 78px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-top: 220px;
 }
 .product-card__price-value {
     display: block;
