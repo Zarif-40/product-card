@@ -1,8 +1,8 @@
 
 .page-background {
     position: absolute;
-    top: -350px;
-    left: 10px;
+    top: -400px;
+    left: 15px;
     width: 790px;
     height: 697px;
     z-index: -1;
@@ -19,7 +19,8 @@
     box-sizing: border-box;
     font-family: Montserrat;
     font-weight: 400;
-  }
+    margin-top: 110px;
+}
 .product-card {
     background-color: #f9f7f7;
     padding: 24px;
