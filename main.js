@@ -4,6 +4,7 @@ const greenColorHash = '#00ff00'
 const violetColorHash = '#ff00ff'
 const googleURL = 'http://google.com'
 const outputLogButton = document.querySelector('#output-console-log')
+const backgroundColorButton = document.querySelector('#toggle-own-color')
 
  highlightButton.addEventListener('click', () => {
 firstProductCard.style.backgroundColor = greenColorHash;
@@ -36,6 +37,15 @@ productCards.forEach (card => {
 const titleText = event.target.textContent;
 console.log(titleText);
  });
+
+backgroundColorButton.style.backgroundColor = 'blue';
+backgroundColorButton.addEventListener('click', function() {
+    if (backgroundColorButton.style.backgroundColor === 'blue') {
+      backgroundColorButton.style.backgroundColor = 'red';
+     } else {
+        backgroundColorButton.style.backgroundColor = 'blue';
+     }
+})
 
 
  
