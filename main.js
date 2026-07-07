@@ -31,6 +31,13 @@ productCards.forEach (card => {
     console.log(message)
  }
 
+ const mainTitle = document.querySelector('.page-title');
+ mainTitle.addEventListener('mouseenter', function(event) {
+const titleText = event.target.textContent;
+console.log(titleText);
+ });
+
+
  
 
 
