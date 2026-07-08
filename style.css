@@ -72,8 +72,9 @@
 .product-card__name {
     margin: 0;
 }
-
-    
-
-
-    
+#toggle-own-color {
+    background-color: blue;
+}
+.red-bg {
+    background-color: red !important;
+}
