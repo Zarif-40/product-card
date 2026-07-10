@@ -7,16 +7,14 @@ showWeather("Таразе", 34);
 
 // 4 пункт.
 
-const speedLight = 299792458;
+const SPEED_LIGHT = 299792458;
 const checkSpeed = (speed) => {
-  if (speed === speedLight) {
+  if (speed === SPEED_LIGHT) {
     console.log("Скорость света");
+  } else if (speed > SPEED_LIGHT) {
+    console.log("Сверхсветовая скорость");
   } else {
-    if (speed > speedLight) {
-      console.log("Сверхсветовая скорость");
-    } else {
-      console.log("Субсветовая скорость");
-    }
+    console.log("Субсветовая скорость");
   }
 };
 checkSpeed(300000000);
@@ -41,10 +39,10 @@ buyProduct(500);
 
 // 6 пункт.
 
-function reminder() {
+function showReminder() {
   console.log("Нужно позвонить мастеру!");
 }
-reminder();
+showReminder();
 
 // 7 пункт.
 
