@@ -57,11 +57,15 @@ const hadithCollection = [
     year: 846,
   },
   {
-    itle: "Сахих Муслим",
+    title: "Сахих Муслим",
     author: "Имам Муслим",
     year: 861,
   },
-  { itle: "Сунан ан-Насаи", author: "Имам ан-Насаи", year: 915 },
+  {
+    title: "Сунан ан-Насаи",
+    author: "Имам ан-Насаи",
+    year: 915,
+  },
 ];
 console.log(hadithCollection);
 
@@ -74,7 +78,7 @@ const moreHadithCollection = [
     year: 888,
   },
   {
-    itle: "Сунан ат-Тирмизи",
+    title: "Сунан ат-Тирмизи",
     author: "Имам ат-Тирмизи",
     year: 884,
   },
@@ -85,4 +89,14 @@ console.log(allCollection);
 
 // 10 пункт.
 
-function checkRareCollections(collectionsArray) {}
+function checkRareCollections(collectionsArray) {
+  return collectionsArray.map((item) => {
+    const isRareCondition = item.year < 870;
+    return {
+      ...item,
+      isRare: isRareCondition,
+    };
+  });
+}
+const rareCheckedResult = checkRareCollections(allCollection);
+console.log(rareCheckedResult);
