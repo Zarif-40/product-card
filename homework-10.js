@@ -29,3 +29,15 @@ productCards.forEach((productCard) => {
   }
   productsGrid.append(cardClone);
 });
+
+// пункт 4.
+
+const productsDescriptions = productCards.reduce((acc, productCard) => {
+   acc.push({
+    [productCard.name]: productCard.description
+});
+return acc;
+}, []);
+console.log(productsDescriptions);
+
+// 5 пункт.
