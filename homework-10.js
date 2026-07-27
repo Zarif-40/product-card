@@ -1,4 +1,5 @@
 import { productCards } from "./products.js";
+
 function renderCards(cardsToREnder) {
   const productCardTemplate = document.querySelector("#product-card-template");
   const productsGrid = document.querySelector(".products-grid");
@@ -6,7 +7,7 @@ function renderCards(cardsToREnder) {
   cardsToREnder.forEach((productCard) => {
     const cardClone = productCardTemplate.content.cloneNode(true);
     const img = cardClone.querySelector(".product-card__image");
-    img.src = productCard.image;
+    img.src = `./${productCard.image}.png`;
     img.alt = productCard.alt || productCard.name;
     cardClone.querySelector(".product-card__category").textContent =
       productCard.category;
@@ -54,6 +55,7 @@ function getCardsCount() {
     return null;
   }
 }
+
 const count = getCardsCount();
 if (count !== null) {
   const selectedProducts = productCards.slice(0, count);

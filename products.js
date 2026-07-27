@@ -1,7 +1,7 @@
 export const productCards = [
   {
     id: 1,
-    image: "mousse.png",
+    image: "mousse",
     alt: "увлажняющий мусс",
     category: "Для нормальной кожи",
     name: "Увлажняющий мусс",
@@ -15,7 +15,7 @@ export const productCards = [
   },
   {
     id: 2,
-    image: "mask.png",
+    image: "mask",
     alt: "увлажняющяя маска",
     category: "Для нормальной кожи",
     name: "Увлажняющяя маска",
@@ -25,7 +25,7 @@ export const productCards = [
   },
   {
     id: 3,
-    image: "gel.png",
+    image: "gel",
     alt: "Гель для умывания",
     category: "Для нормальной кожи",
     name: "Гель для умывания",
@@ -39,7 +39,7 @@ export const productCards = [
   },
   {
     id: 4,
-    image: "set1.png",
+    image: "set1",
     alt: "Подарочный набор №1с",
     category: "Для нормальной кожи",
     name: "Подарочный набор №1",
@@ -49,7 +49,7 @@ export const productCards = [
   },
   {
     id: 5,
-    image: "set5.png",
+    image: "set5",
     alt: "Подарочный набор №5с",
     category: "Для нормальной кожи",
     name: "Подарочный набор №5",
