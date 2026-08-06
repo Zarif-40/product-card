@@ -163,11 +163,13 @@
   background: transparent;
   outline: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
   color: #333333;
   padding-left: 16px;
   border-left: 1px solid #cccccc;
   white-space: nowrap;
+  height: 500;
+  height: 100%;
 }
 .footer__copyright-wrapper {
   display: flex;
